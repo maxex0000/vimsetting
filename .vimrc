@@ -3,7 +3,7 @@ execute pathogen#infect()
 
 set fileencodings=utf-8,cp950
 
- "syntax on        " 語法上色顯示
+ syntax on        " 語法上色顯示
  set nocompatible " VIM 不使用和 VI 相容的模式
  set ai           " 自動縮排
  set tabstop=2    " tab 的字元數
