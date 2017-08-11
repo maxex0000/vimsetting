@@ -11,4 +11,5 @@ git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javas
 ### vim-jsx
 git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
 
-
+### nerdTred
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree

@@ -3,7 +3,7 @@ execute pathogen#infect()
 
 set fileencodings=utf-8,cp950
 
- syntax on        " 語法上色顯示
+ "syntax on        " 語法上色顯示
  set nocompatible " VIM 不使用和 VI 相容的模式
  set ai           " 自動縮排
  set tabstop=2    " tab 的字元數
@@ -36,9 +36,6 @@ set fileencodings=utf-8,cp950
 " set background=light
 
 
- " show trailing white spaces
- highlight WhitespaceEOL ctermbg=cyan guibg=red
- match WhitespaceEOL /\s$/
 
  set shiftwidth=2 " 設定縮排寬度 = 4
 
@@ -61,6 +58,7 @@ nnoremap <C-Right> :tabnext<CR>
  imap <F3> <ESC>:w<CR>
  map <F4> <ESC>:set rnu!<CR>
  map <F5> <ESC>:set nu!<CR>
+ noremap <silent> <F12> :NERDTree<CR>
  imap jj <Esc>
  nnoremap <F2> :nohl<CR>
  "強迫不使用方向鍵"
@@ -72,3 +70,12 @@ nnoremap <C-Right> :tabnext<CR>
  inoremap <down> <nop>
  inoremap <left> <nop>
  inoremap <right> <nop>
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+vnoremap <leader>p "_dP
+nnoremap x "_x
+nnoremap X "_X
+
+ " show trailing white spaces
+ highlight WhitespaceEOL ctermbg=cyan guibg=red
+ match WhitespaceEOL /\s$/
